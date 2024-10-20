@@ -14,6 +14,8 @@ Below are the API endpoints and their respective responses.
 
 ### API Key
 
+The plugin gets the API key from the environment variables of the server.
+
 ```http request
 X-API-KEY: {api_key}
 ```
