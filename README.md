@@ -16,7 +16,7 @@ Below are the API endpoints and their respective responses.
 X-API-KEY: {api_key}
 ```
 
-**Success response**
+**Success responses**
 
 <table>
 <thead>
