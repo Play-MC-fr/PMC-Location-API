@@ -102,7 +102,7 @@ X-API-KEY: {api_key}
 ```bash
 curl -X GET \
      -H "X-API-Key: {api_key}" \
-     https://{server_ip}:7070/api/location/Notch
+     http://{server_ip}:7070/api/location/Notch
 ```
 
 </td>
