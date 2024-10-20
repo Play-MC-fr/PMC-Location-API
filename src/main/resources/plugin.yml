@@ -1,0 +1,6 @@
+name: PMC-Location-API
+version: '1.0-SNAPSHOT'
+main: fr.sukikui.pmc_location_api.main
+api-version: '1.20'
+authors: [ Sukikui ]
+description: desc
