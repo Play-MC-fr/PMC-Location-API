@@ -6,17 +6,19 @@ Below are the API endpoints and their respective responses.
 
 ## `GET` Player location
 
-**URL**
+### URL
+
 ```bash
 /api/location/{player}
 ```
 
-**API Key**
+### API Key
+
 ```http request
 X-API-KEY: {api_key}
 ```
 
-**Success response**
+### Success responses
 
 <table>
 <thead>
@@ -47,7 +49,7 @@ X-API-KEY: {api_key}
 </tbody>
 </table>
 
-**Error responses**
+### Error responses
 
 <table>
 <thead>
@@ -84,7 +86,7 @@ X-API-KEY: {api_key}
 </tbody>
 </table>
 
-**Example**
+### Example
 
 <table>
 <thead>
