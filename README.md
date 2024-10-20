@@ -110,7 +110,7 @@ curl -X GET \
 
 ```json
 {
-    "world": "world",
+    "world": "world_nether",
     "x": 134,
     "y": 98,
 }

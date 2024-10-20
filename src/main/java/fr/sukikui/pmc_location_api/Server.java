@@ -46,9 +46,6 @@ public class Server
                 router.before(ctx -> {
                     String apiKey = ctx.header("X-API-Key");
 
-                    Bukkit.broadcastMessage("API Key: " + API_KEY);
-                    Bukkit.broadcastMessage("Given API Key: " + apiKey);
-
                     if (apiKey == null || !apiKey.equals(API_KEY)) {
                         throw new UnauthorizedResponse("Invalid API Key");
                     }
