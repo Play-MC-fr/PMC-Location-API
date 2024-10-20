@@ -56,7 +56,7 @@ public class Server
             }).apiBuilder(() -> get("/", ctx -> ctx.result("PMC Location API")));
         }).start(7070);
 
-        app.get("/players/{name}/location", Server::getPlayerLocation);
+        app.get("/api/location/{name}", Server::getPlayerLocation);
     }
 
     public static void stop() {
