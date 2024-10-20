@@ -1,0 +1,30 @@
+name: Build and Release Spigot Plugin
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up JDK
+        uses: actions/setup-java@v2
+        with:
+          java-version: '17'
+          distribution: ''
+
+      - name: Build with Maven
+        run: mvn clean package
+
+      - name: Upload release asset
+        uses: softprops/action-gh-release@v1
+        with:
+          tag: ${{ github.event.release.tag_name }}
+          files: target/*.jar
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
