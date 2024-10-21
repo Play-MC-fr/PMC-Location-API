@@ -1,4 +1,5 @@
 dependency-reduced-pom.xml
+pom_plugin_exporter.xml
 target/
 .idea/
 *.iml

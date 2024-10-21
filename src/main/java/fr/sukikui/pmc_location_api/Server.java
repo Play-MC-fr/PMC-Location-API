@@ -6,11 +6,9 @@ import io.javalin.http.UnauthorizedResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.javalin.json.JsonMapper;
-import org.bukkit.Bukkit;
-
 import java.lang.reflect.Type;
-
 import static io.javalin.apibuilder.ApiBuilder.get;
+
 
 public class Server
 {
