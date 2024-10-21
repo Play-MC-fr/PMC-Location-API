@@ -6,7 +6,7 @@
 
     <groupId>fr.sukikui</groupId>
     <artifactId>pmc-location-api</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
     <name>pmc-location-api</name>
