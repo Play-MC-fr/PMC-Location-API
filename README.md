@@ -11,17 +11,20 @@ sent to the API and their code.
 The plugin gets the API key from the environment variables of the server.
 
 <table>
+<thead>
+<tr>
+<th>Method</th>
+<th>URL</th>
+<th>API Key</th>
+</tr>
+</thead>
 <tbody>
 <tr>
-<td><strong>Method</strong></td>
 <td>
 
 `GET`
 
 </td>
-</tr>
-<tr>
-<td><strong>URL</strong></td>
 <td>
 
 ```bash
@@ -29,9 +32,6 @@ The plugin gets the API key from the environment variables of the server.
 ```
 
 </td>
-</tr>
-<tr>
-<td><strong>API Key</strong></td>
 <td>
 
 ```http request
