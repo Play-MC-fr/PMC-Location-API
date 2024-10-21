@@ -7,6 +7,7 @@ public final class Main extends JavaPlugin
     @Override
     public void onEnable()
     {
+        this.getCommand("requests").setExecutor(new CommandManager());
         Server.start();
     }
 
