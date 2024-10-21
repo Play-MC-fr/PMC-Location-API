@@ -3,7 +3,8 @@
 This Spigot plugin allows the server on which it is installed to communicate
 the locations of all connected players through a **REST API** on port **7070**.
 
-## Commands
+The plugin provides the in-game command `/requests` to see the count of requests 
+sent to the API and their code.
 
 ## API Endpoint
 
