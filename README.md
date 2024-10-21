@@ -43,6 +43,7 @@ X-API-KEY: {api_key}
     "world": "{world}",
     "x": {x},
     "y": {y},
+    "z": {z}
 }
 ```
 
@@ -115,6 +116,7 @@ curl -X GET \
     "world": "world_nether",
     "x": 134,
     "y": 98,
+    "z": 123
 }
 ```
 

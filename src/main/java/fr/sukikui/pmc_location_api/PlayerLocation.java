@@ -15,7 +15,7 @@ public class PlayerLocation
         {
             Location loc = player.getLocation();
             return new PlayerLocation(Objects.requireNonNull(loc.getWorld()).getName(),
-                    loc.getBlockX(), loc.getBlockY());
+                    loc.getBlockX(), loc.getBlockY(), loc.getBlockZ());
         }
         return null;
     }
@@ -23,11 +23,13 @@ public class PlayerLocation
     public String world;
     public int x;
     public int y;
+    public int z;
 
-    public PlayerLocation(String world, int blockX, int blockY)
+    public PlayerLocation(String world, int blockX, int blockY, int blockZ)
     {
         this.world = world;
         this.x = blockX;
         this.y = blockY;
+        this.z = blockZ;
     }
 }
