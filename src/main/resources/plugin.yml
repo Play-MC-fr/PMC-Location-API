@@ -3,4 +3,10 @@ version: '1.0'
 main: fr.sukikui.pmc_location_api.Main
 api-version: '1.21'
 authors: [ Sukikui ]
-description: REST API to get players locations from the server Play-MC.fr using a key
+description: Secure embedded API in Spigot Minecraft server for accessing player location
+commands:
+  requests:
+    description: Count the number of requests send to the API since the last reload
+    usage: /requests
+    permission: pmc_location_api.requests
+    aliases: [ requests ]
