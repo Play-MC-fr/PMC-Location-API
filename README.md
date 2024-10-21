@@ -2,23 +2,46 @@
 
 This Spigot plugin allows the server on which it is installed to communicate
 the locations of all connected players through a **REST API** on port **7070**.
-Below are the API endpoints and their respective responses.
 
-## `GET` Player location
+The plugin provides the in-game command `/requests` to see the count of requests 
+sent to the API and their code.
 
-### URL
+## API Endpoint
+
+The plugin gets the API key from the environment variables of the server.
+
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>URL</th>
+<th>API Key</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+
+`GET`
+
+</td>
+<td>
 
 ```bash
 /api/location/{player}
 ```
 
-### API Key
-
-The plugin gets the API key from the environment variables of the server.
+</td>
+<td>
 
 ```http request
 X-API-KEY: {api_key}
 ```
+
+</td>
+</tr>
+</tbody>
+</table>
 
 ### Success responses
 
