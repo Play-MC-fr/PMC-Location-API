@@ -14,7 +14,7 @@ import static io.javalin.apibuilder.ApiBuilder.get;
 
 public class Server
 {
-    private static ArrayList<RequestResponse> requests = new ArrayList<RequestResponse>();
+    private static ArrayList<RequestResponse> requests = new ArrayList<>();
     private static Javalin app;
     private static final String API_KEY = System.getenv("PMC_LOCATION_API_KEY");
 
@@ -78,7 +78,7 @@ public class Server
 
     public static void stop()
     {
-        app.stop();
+            app.stop();
     }
 
     private static void getPlayerLocation(Context ctx)
@@ -94,7 +94,7 @@ public class Server
         else
         {
             Server.requests.add(RequestResponse.PLAYER_NOT_FOUND);
-            ctx.status(404).result(RequestResponse.PLAYER_NOT_FOUND.message);
+            ctx.status(RequestResponse.PLAYER_NOT_FOUND.code).result(RequestResponse.PLAYER_NOT_FOUND.message);
         }
     }
 }

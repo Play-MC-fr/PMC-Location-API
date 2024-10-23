@@ -12,7 +12,7 @@ public class CommandManager implements CommandExecutor
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args)
     {
-        // Only /requests_count is implemented so no need to check the command
+        // Only /requests command is implemented so no need to check the command
         Map<RequestResponse, Integer> countMap = new HashMap<>();
 
         for (RequestResponse value : Server.getRequests())
